@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap')
 
 * {
@@ -154,12 +153,15 @@ body * {
 
 .textfield > input::placeholder {
     color: #D6C5F0; 
+
 }
 
 .btn-login  {
+    display: flex;
+    text-align: center;
+    justify-content: center;
     width: 37vh; 
     padding: 16px 0px;
-    margin: 25px;
     border: none; 
     border-radius: 3px;
     outline: none; 
@@ -195,13 +197,15 @@ body * {
     }
 }
 
-@media only screen and (max-width : 600px) {
+@media only screen and (max-width : 1200px) {
     .login-principal-menu  {
         flex-direction: column; 
+        padding: 10%; 
     }
 
     .esquerda-login > h1{
         display : none; 
+        justify-content: center;
     }
 
     .esquerda-login {
@@ -216,4 +220,16 @@ body * {
     .card-login {
         width: 90%;
     }
+    
+    .cabecalho{
+        padding: 10% ;
+      }
+      
+      .cabecalho_menu {
+        justify-content: center;
+      }
+    
+      .apresentacao{
+        flex-direction: column-reverse;
+      }
 }
