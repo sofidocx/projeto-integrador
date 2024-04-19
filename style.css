@@ -214,10 +214,13 @@ body * {
         width: 100%; 
     }
 
-    .card-login {
+     .card-login {
+        align-items: center;
         width: 100%;
+        flex-direction: column; 
+        padding: 10%; 
     }
-    
+
     .btn-login  {
         width: 200px; 
         padding: 16px 0px;
@@ -240,11 +243,12 @@ body * {
       }
       
       .cabecalho_menu {
+        width: 100vh; 
         justify-content: center;
       }
     
       .apresentacao{
-        width: 100%; 
+        width: 100vh; 
         flex-direction: column-reverse;
       }
 }
