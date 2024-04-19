@@ -1,0 +1,219 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap')
+
+* {
+    margin : 0; 
+    padding: 0; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+body * {
+    box-sizing: border-box; 
+}
+
+.cabecalho{
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    background-color: #1B0044;
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: "Bebas Neue", sans-serif;  ;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d4b7ff;
+    text-decoration: none;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B0044;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family:"Bebas Neue", sans-serif; 
+    color:#a66bff; 
+}
+.titulo-destaque{
+    color: #5727A3;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: #D6C5F0; 
+}
+
+
+.login-principal-menu {
+    width: 100vw; 
+    height: 100vh;
+    background: #1B0044;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-login {
+    width: 50vw; 
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column; 
+}
+
+.esquerda-login > h1 {
+    color: #D6C5F0; 
+    font-size: 4vw; 
+    font-family: "Bebas Neue", sans-serif; 
+}
+
+.left-image{ 
+    width: 35vw;
+}
+
+.direita-login {
+    width: 50vw; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card-login { 
+    width: 60%; 
+    display: flex;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; 
+    border-radius: 20px; 
+    background: #37176c; 
+    box-shadow: 0px 10px 40px #161731; 
+}
+
+.card-login > h1 {
+    color:#D6C5F0; 
+    font-weight: 800; 
+    margin: 0;  
+    font-family: "Bebas Neue", sans-serif; 
+
+}
+
+.textfield{ 
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    justify-content: center; 
+    margin: 10px 0px;
+}
+
+.textfield > input {
+    width: 100%; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 15px; 
+    background-color: #5727A3;
+    color: #EEEEEE; 
+    font-size: 12pt; 
+    box-shadow: 0px 2px 30px #310A5D;
+    outline: none; 
+    box-sizing: border-box; 
+
+
+}
+
+.textfield > label {
+    color: #D6C5F0; 
+    margin-bottom: 10px; 
+}
+
+.textfield > input::placeholder {
+    color: #D6C5F0; 
+}
+
+.btn-login  {
+    width: 37vh; 
+    padding: 16px 0px;
+    margin: 25px;
+    border: none; 
+    border-radius: 3px;
+    outline: none; 
+    text-transform: uppercase;
+    font-weight: 800 ;
+    letter-spacing: 4px; 
+    color: #33106b; 
+    background: #ddbffd; 
+    cursor: pointer; 
+    box-shadow: 0px 10px 40px -12px #37176c ; 
+    
+}
+
+.btn-login:hover{ 
+    background-color: rgb(220, 172, 255); 
+    padding: 14px;
+    border: 2px solid  rgb(220, 172, 255); 
+}
+
+.rodape{
+    color: #ddbffd;
+    background-color: #5727A3;
+    padding: 24px;
+    text-align: center;
+    font-family:"Bebas Neue", sans-serif; ;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width : 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .login-principal-menu  {
+        flex-direction: column; 
+    }
+
+    .esquerda-login > h1{
+        display : none; 
+    }
+
+    .esquerda-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image{
+        width: 50vw; 
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}
