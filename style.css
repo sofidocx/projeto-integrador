@@ -254,5 +254,11 @@ body * {
         width: 100%; 
         height: auto;
         flex-direction: column-reverse;
+      
+      }
+    .apresentacao__conteudo {
+        width: 100%; 
+        height: auto; 
+        
       }
 }
