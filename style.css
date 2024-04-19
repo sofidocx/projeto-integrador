@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap')
 
 * {
@@ -101,12 +102,12 @@ body * {
     align-items: center; 
 }
 
-.card-login { 
+.card-login {
     width: 60%; 
     display: flex;
     text-align: center;
-    justify-content: center; 
-    align-items: center;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
     flex-direction: column;
     padding: 30px 35px; 
     border-radius: 20px; 
@@ -157,10 +158,7 @@ body * {
 }
 
 .btn-login  {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 37vh; 
+    width: 200px; 
     padding: 16px 0px;
     border: none; 
     border-radius: 3px;
@@ -191,16 +189,11 @@ body * {
     font-weight: 400;
 }
 
-@media only screen and (max-width : 950px) {
-    .card-login {
-        width: 85%;
-    }
-}
-
 @media only screen and (max-width : 1200px) {
     .login-principal-menu  {
         flex-direction: column; 
         padding: 10%; 
+        width: 100%; 
     }
 
     .esquerda-login > h1{
