@@ -190,6 +190,10 @@ body * {
 }
 
 @media only screen and (max-width : 1200px) {
+    body {
+        box-sizing: border-box;
+        margin: 0; 
+    }
     .login-principal-menu  {
         flex-direction: column; 
         padding: 10%; 
@@ -207,11 +211,11 @@ body * {
     }
 
     .left-image{
-        width: 50vw; 
+        width: 100%; 
     }
 
     .card-login {
-        width: 90%;
+        width: 100%;
     }
     
     .cabecalho{
